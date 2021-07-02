@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --default-background-color: #fff;
+  --default-box-color: #f6e58d;
+  --default-shadow-color: #000;
+  --default-sidebar-color: #ff7979;
+}

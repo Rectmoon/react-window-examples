@@ -1,0 +1,25 @@
+
+.List {
+  border: 1px solid #d9dddd;
+}
+
+.Item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+  transition: all 500ms ease-in-out;
+}
+
+.ListItemEven,
+.ListItemOdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ListItemEven {
+  background-color: #f8f8f0;
+}

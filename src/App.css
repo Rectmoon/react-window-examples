@@ -1,0 +1,46 @@
+.App {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr minmax(130px, 20%);
+  background: var(--background-color, --default-background-color);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em;
+  background: var(--sidebar-color, var(--default-sidebar-color));
+  color: var(--default-background-color);
+}
+
+.settings label {
+  margin: 0.75rem 0 0.15rem 0;
+  font-weight: bold;
+}
+
+select, input:not([type='color']) {
+  padding: 0.25em 0.5em;
+  font-family: serif;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 0.3em;
+}
+
+select, input:not([type='color']):focus {
+  border-color: #0af;
+}
+
+select, input[type='color'] {
+  width: 100%;
+  border-radius: 0.3em;
+  background-color: var(--default-background-color);
+  border: none;
+  cursor: pointer;
+}
